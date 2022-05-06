@@ -7,7 +7,7 @@
 // gets the path of the dll (place this above the custom functions)
 std::string GetDLLPath()
 {
-    HMODULE hModule = GetModuleHandleA("headhunter.dll");
+    HMODULE hModule = GetModuleHandleA(NULL);
     if (hModule == NULL)
         return "";
     char buffer[MAX_PATH + 1];
